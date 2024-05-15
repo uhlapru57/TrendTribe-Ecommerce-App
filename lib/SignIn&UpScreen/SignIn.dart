@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:trandtribe/HomeScreen.dart';
+import 'package:trandtribe/Widgets/BottomNavBar.dart';
+import 'package:trandtribe/BtmNavBarScreens/HomeScreen.dart';
 
 import '../Widgets/CommonTextField.dart';
 import '../Widgets/RoundedButton.dart';
@@ -98,9 +99,9 @@ class _SignInState extends State<SignIn> {
                 height: 15,
               ),
               RoundedButton(
-                  title: ("Sign In"),
+                  title: ("Log In"),
                   onTap: () {
-                    Get.to(HomeScreen());
+                    Get.to(const BottomNavBar());
                   },
                   width: double.infinity),
               const SizedBox(
@@ -156,7 +157,7 @@ class _SignInState extends State<SignIn> {
                           width: 10,
                         ),
                         const Text(
-                          "Sign In with Google",
+                          "Continue with Google",
                           style: TextStyle(
                               fontSize: 15, fontWeight: FontWeight.w500),
                         ),
@@ -186,7 +187,7 @@ class _SignInState extends State<SignIn> {
                           width: 10,
                         ),
                         const Text(
-                          "Sign In with Facebook",
+                          "Continue with Facebook",
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 15,

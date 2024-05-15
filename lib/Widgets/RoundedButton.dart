@@ -8,12 +8,12 @@ class RoundedButton extends StatelessWidget {
   final double width;
 
   const RoundedButton({
-    Key? key,
+    super.key,
     required this.title,
     required this.onTap,
     this.loading = false,
     required this.width,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -23,9 +23,7 @@ class RoundedButton extends StatelessWidget {
       onTap: onTap,
       child: Container(
         height: 60.0,
-        width: width > 0
-            ? width
-            : screenWidth * 0.8, // Set default width as 80% of screen width
+        width: width > 0 ? width : screenWidth * 0.8,
         decoration: BoxDecoration(
           color: Colors.black,
           borderRadius: BorderRadius.circular(10),

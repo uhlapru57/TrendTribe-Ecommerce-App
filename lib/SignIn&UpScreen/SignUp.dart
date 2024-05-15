@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:trandtribe/HomeScreen.dart';
+import 'package:trandtribe/Widgets/BottomNavBar.dart';
+import 'package:trandtribe/BtmNavBarScreens/HomeScreen.dart';
 import 'package:trandtribe/Widgets/RoundedButton.dart';
 import 'package:trandtribe/SignIn&UpScreen/SignIn.dart';
 
@@ -101,7 +102,7 @@ class _SignUpState extends State<SignUp> {
               RoundedButton(
                   title: ("Sign Up"),
                   onTap: () {
-                    Get.to(HomeScreen());
+                    Get.to(BottomNavBar());
                   },
                   width: double.infinity),
               const SizedBox(
